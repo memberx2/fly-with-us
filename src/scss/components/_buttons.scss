@@ -12,3 +12,19 @@
 //         text-align: center;
 //     }
 // }
+
+.form-button {
+    position: absolute;
+    top: -57px;
+    right: -141px;
+
+    width: 98px;
+    height: 178px;
+
+    cursor: pointer;
+
+    border: 0;
+    background: url(../img/arrow.png) no-repeat 50% 50%;
+    background-color: $color_dark_purple;
+    box-shadow: -16px 0 20px #410b4c;
+}

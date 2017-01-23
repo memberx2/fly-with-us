@@ -35,6 +35,7 @@
             </li>
         </ul>
         <form class="header-search-form">
+            <span class="icon-search-1"></span>
             <input class="search-input" type="search" placeholder="search">
         </form>
     </header>
@@ -44,13 +45,36 @@
                 <h1 class="hero-title">Fly with us</h1>
             </div>
         </section>
-        <div class="destination">
-            <form class="destination-form">
-                <input class="current-city-input" type="text" placeholder="Current City">
-                <input class="destination-input" type="text" placeholder="Destination">
-                <input class="date-input-arrival" type="date">
-                <input class="date-input-departures" type="date">
-            </form>
+        <div class="inner">
+            <div class="destination">
+                <form class="destination-form">
+                    <input class="current-city-input text-input input" type="text" placeholder="Current City">
+                    <input class="destination-input text-input input" type="text" placeholder="Destination">
+                    <div class="input-container">
+                        <img class="date-image" src="./src/img/calendar_icon.png" alt=""/>
+                        <input class="date-input-arrival date-input input" type="text" placeholder="data">
+                    </div>
+                    <div class="input-container">
+                        <img class="date-image" src="./src/img/calendar_icon.png" alt=""/>
+                        <input class="date-input-departures date-input input" type="text" placeholder="data">
+                    </div>
+                    <div class="input-container number-container">
+                        <img class="people-image" src="./src/img/people_icon.png" alt=""/>
+                        <ul class="counter">
+                            <li class="counter-item">
+                                <img class="arrow" src="./src/img/up_arrow.png" alt=""/>
+                            </li>
+                            <li class="counter-item">
+                                <input class="number-input input" type="number" placeholder="2">
+                            </li>
+                            <li class="counter-item">
+                                <img class="arrow" src="./src/img/down_arrow.png" alt=""/>
+                            </li>
+                        </ul>
+                        <button class="form-button"></button>
+                    </div>
+                </form>
+            </div>
         </div>
         <section class="cheapest-flights">
             <div class="inner-text">
@@ -69,7 +93,7 @@
                     </li>
                     <li class="cheapest-flights-item">
                         <figure>
-                            <img class="cheapest-flights-image" src="./src/img/money_image.png" alt=""/>
+                            <img class="cheapest-flights-image money-image" src="./src/img/money_image.png" alt=""/>
                         </figure>
                     </li>
                 </ul>
@@ -82,58 +106,58 @@
             <div class="inner">
                 <div class="inner-text">
                     <h2 class="popular-destinations-title">Popular Destinations</h2>
-                    <p class="popular-destinations-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                    <p class="popular-destinations-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
                 </div>
                 <ul class="popular-destinations-images">
                     <li class="popular-destinations-item">
-                        <figure>
-                            <span class="image-background"></span>
-                            <img src="./src/img/city_image.png" alt=""/>
+                        <figure class="figure">
+                            <img class="image-background" src="./src/img/picture_frames.png" alt=""/>
+                            <img class="popular-destinations-image" src="./src/img/city_image.png" alt=""/>
                             <figcaption>
                                 <p class="popular-destinations-image-description">New York</p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="popular-destinations-item">
-                        <figure>
-                            <span class="image-background"></span>
-                            <img src="./src/img/city_image.png" alt=""/>
+                        <figure class="figure">
+                            <img class="image-background" src="./src/img/picture_frames.png" alt=""/>
+                            <img class="popular-destinations-image" src="./src/img/city_image.png" alt=""/>
                             <figcaption>
                                 <p class="popular-destinations-image-description">Dubai</p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="popular-destinations-item">
-                        <figure>
-                            <span class="image-background"></span>
-                            <img src="./src/img/city_image.png" alt=""/>
+                        <figure class="figure">
+                            <img class="image-background" src="./src/img/picture_frames.png" alt=""/>
+                            <img class="popular-destinations-image" src="./src/img/city_image.png" alt=""/>
                             <figcaption>
                                 <p class="popular-destinations-image-description">Paris</p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="popular-destinations-item">
-                        <figure>
-                            <span class="image-background"></span>
-                            <img src="./src/img/city_image.png" alt=""/>
+                        <figure class="figure">
+                            <img class="image-background" src="./src/img/picture_frames.png" alt=""/>
+                            <img class="popular-destinations-image" src="./src/img/city_image.png" alt=""/>
                             <figcaption>
                                 <p class="popular-destinations-image-description">London</p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="popular-destinations-item">
-                        <figure>
-                            <span class="image-background"></span>
-                            <img src="./src/img/city_image.png" alt=""/>
+                        <figure class="figure">
+                            <img class="image-background" src="./src/img/picture_frames.png" alt=""/>
+                            <img class="popular-destinations-image" src="./src/img/city_image.png" alt=""/>
                             <figcaption>
                                 <p class="popular-destinations-image-description">Amsterdam</p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="popular-destinations-item">
-                        <figure>
-                            <span class="image-background"></span>
-                            <img src="./src/img/city_image.png" alt=""/>
+                        <figure class="figure">
+                            <img class="image-background" src="./src/img/picture_frames.png" alt=""/>
+                            <img class="popular-destinations-image" src="./src/img/city_image.png" alt=""/>
                             <figcaption>
                                 <p class="popular-destinations-image-description">Rio De Janeiro</p>
                             </figcaption>

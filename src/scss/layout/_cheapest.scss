@@ -1,0 +1,38 @@
+.cheapest-flights {
+    text-align: center;
+}
+
+.cheapest-flights-title {
+    font-family: $font_playfair;
+    font-size: 66.67px;
+    font-weight: normal;
+
+    color: $color_dark_grey;
+    padding-top: 130px;
+}
+
+.cheapest-flights-description {
+	font-family: $font_default;
+    font-size: 20.83px;
+    font-weight: lighter;
+    margin-top: 54px;
+    padding-bottom: 86px;
+}
+
+.cheapest-flights-images {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 130px;
+}
+
+.cheapest-flights-image {
+	height: 100px;
+}
+
+.money-image {
+	height: 77px;
+}
+

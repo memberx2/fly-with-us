@@ -20,6 +20,7 @@
             </li>
         </ul>
         <form class="header-search-form">
+            <span class="icon-search-1"></span>
             <input class="search-input" type="search" placeholder="search">
         </form>
     </header>
