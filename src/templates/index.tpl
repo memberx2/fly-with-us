@@ -27,23 +27,23 @@
             </form>
         </div>
         <section class="cheapest-flights">
-            <div class="inner">
+            <div class="inner-text">
                 <h2 class="cheapest-flights-title">Find the cheapest flights</h2>
                 <p class="cheapest-flights-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <ul class="cheapest-flights-images">
                     <li class="cheapest-flights-item">
                         <figure>
-                            <img class="cheapest-flights-image"/>
+                            <img class="cheapest-flights-image" src="./src/img/umbrella_image.png" alt=""/>
                         </figure>
                     </li>
                     <li class="cheapest-flights-item">
                         <figure>
-                            <img class="cheapest-flights-image"/>
+                            <img class="cheapest-flights-image" src="./src/img/ticket_image.png" alt=""/>
                         </figure>
                     </li>
                     <li class="cheapest-flights-item">
                         <figure>
-                            <img class="cheapest-flights-image"/>
+                            <img class="cheapest-flights-image" src="./src/img/money_image.png" alt=""/>
                         </figure>
                     </li>
                 </ul>
@@ -52,8 +52,10 @@
         {{ l_intersection.render() }}
         <section class="popular-destinations">
             <div class="inner">
-                <h2 class="popular-destinations-title">Popular Destinations</h2>
-                <p class="popular-destinations-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                <div class="inner-text">
+                    <h2 class="popular-destinations-title">Popular Destinations</h2>
+                    <p class="popular-destinations-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                </div>
                 <ul class="popular-destinations-images">
                     <li class="popular-destinations-item">
                         <figure>
@@ -115,7 +117,7 @@
         </section>
         {{ l_intersection.render() }}
         <section class="customers-thoughts">
-            <div class="inner">
+            <div class="inner-text">
                 <h2 class="customers-thoughts-title">Hear our customers' thoughts</h2>
                 <figure>
                     <img src="./src/img/heart_image.png" alt=""/>

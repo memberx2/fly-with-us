@@ -1,3 +1,10 @@
-.l-inner {
-    @extend %helper--inner;
+.inner {
+    width: $size_inner;
+    margin: 0 auto;
 }
+
+.inner-text {
+	width: $size_inner-text;
+    margin: 0 auto;
+}
+

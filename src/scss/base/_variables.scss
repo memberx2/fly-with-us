@@ -19,10 +19,15 @@ $colors:
 
 $color_default_link:		$color_3;
 
+$color_grey: #787878;
+$color_purple: #60206d;
+$color_light_grey: #dddddd;
+
 
 /* Sizes
 ========================================================================== */
-$size_inner:        				1240px;
+$size_inner:        				1123px;
+$size_inner_text:           800px;
 $size_gutter:       				20px;
 
 $size_btn:							48px;
@@ -30,7 +35,9 @@ $size_btn:							48px;
 
 /* Fonts
 ========================================================================== */
-$font_default: 		Arial, sans-serif;
+$font_default: 		'Open Sans', sans-serif;
+$font_playfair:   'Playfair Display', sans-serif;
+$font_roboto:     'Roboto', sans-serif;
 $font_ico: 			'fontello';
 
 /* Breakpoints

@@ -1,0 +1,12 @@
+.hero {
+	background: url(../img/hero_image.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.hero-title {
+	color: $color_white;
+	font-family: $font_playfair;
+	font-size: 109.24px;
+	font-weight: normal;
+	padding: 245px 0 305px;
+}
