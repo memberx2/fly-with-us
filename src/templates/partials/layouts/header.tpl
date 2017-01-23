@@ -1,38 +1,26 @@
-{% macro render(_active_no='') %}
-    {% if _active_no == '' %}         
-        {% set logo_href='#' %}
-    {% else %}
-        {% set logo_href='index.html' %}
-    {% endif %}
-		<header class="l-header">
-            <div class="l-inner">
-                <div class="l-header__title">
-                    <h1>Exemplary heading</h1>
-                </div>
-                <nav class="l-header__nav" aria-label="main navigation">
-                    <ul class="c-static-links-list row">
-                        <li class="c-static-links-list__item gr-12 gr-24@tablet {% if _active_no == '1.1' %}is-active{% endif %}">
-                            <a href="#">
-                                <span class="c-label">Link 1</span>
-                            </a>
-                        </li>
-                        <li class="c-static-links-list__item gr-12 gr-24@tablet {% if _active_no == '1.2' %}is-active{% endif %}">
-                            <a href="#">
-                                <span class="c-label">Link 2</span>
-                            </a>
-                        </li>
-                        <li class="c-static-links-list__item gr-12 gr-24@tablet {% if _active_no == '1.3' %}is-active{% endif %}">
-                            <a href="#">
-                                <span class="c-label">Link 3</span>
-                            </a>
-                        </li>
-                        <li class="c-static-links-list__item gr-12 gr-24@tablet {% if _active_no == '1.4' %}is-active{% endif %}">
-                            <a href="#">
-                                <span class="c-label">Link 4</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+{% macro render() %}
+    <header class="header">  
+        <ul class="header-navigation">
+            <li class="header-navigation-item">
+                <figure>
+                    <img class="header-logo" src="./src/img/header_logo.png" alt=" "/>
+                </figure>
+            </li>
+            <li class="header-navigation-item">
+                <a class="header-navigation-link" href="#">Flights</a>
+            </li>
+            <li class="header-navigation-item">
+                <a class="header-navigation-link" href="#">Hotels</a>
+            </li>
+            <li class="header-navigation-item">
+                <a class="header-navigation-link" href="#">Guides</a>
+            </li>
+            <li class="header-navigation-item">
+                <a class="header-navigation-link" href="#">Popular</a>
+            </li>
+        </ul>
+        <form class="header-search-form">
+            <input class="search-input" type="search" placeholder="search">
+        </form>
+    </header>
 {% endmacro %}
