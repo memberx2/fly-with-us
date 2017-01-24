@@ -1,0 +1,50 @@
+.customers-thoughts {
+    text-align: center;
+}
+
+.customers-thoughts-title {
+    padding-top: 130px;
+}
+
+.customers-thoughts-item {
+    position: relative;
+}
+
+.customer-quote-container {
+    position: absolute;
+    top: 238px;
+    left: 50%;
+
+    width: 316px;
+    height: 222px;
+    padding-top: 76px;
+
+    transform: translate(-50%);
+
+    background-color: $color_white;
+}
+
+.customer-quote {
+    position: relative;
+
+    width: 230px;
+    margin: 0 auto;
+
+    font-family: $font_default;
+    font-size: 16.67px;
+    font-weight: lighter;
+    &:before {
+        position: absolute;
+        top: -16px;
+        left: -22px;
+
+        content: url(../img/1_mark.png);
+    }
+    &:after {
+        position: absolute;
+        right: -22px;
+        bottom: -26px;
+
+        content: url(../img/2_mark.png);
+    }
+}

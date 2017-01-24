@@ -2,32 +2,6 @@
    Icons
    ========================================================================== */
 
-/* styles for fontello icons
-.o-icon {
-    font-family: $font_ico;
-    line-height: 1;
-
-    @extend %helper--inline-flex--center--center;
-    &:before {
-        margin: 0;
-
-        line-height: 1;
-
-        @extend %helper--inline-flex--center--center;
-    }
-}
-*/
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'custom-fonts';
-    src: url('../font/custom-fonts.svg?3993695#custom-fonts') format('svg');
-  }
-}
-*/
- 
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "custom-fonts";
   font-style: normal;
@@ -63,4 +37,5 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.icon-cancel:before { content: '\e800'; } /* '' */
 .icon-search-1:before { content: '\e808'; } /* '' */

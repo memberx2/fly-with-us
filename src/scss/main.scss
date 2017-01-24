@@ -24,8 +24,6 @@
 @import "base/helpers";
 @import "base/icons";
 @import "base/animations";
-@import "base/ui";
-@import "base/objects";
 @import "base/custom-attributes";
 @import "base/grid-gridle";
 
@@ -35,25 +33,26 @@
 @import "layout/header";
 @import "layout/hero";
 @import "layout/footer";
-@import "layout/intersection";
 @import "layout/destination";
 @import "layout/cheapest";
 @import "layout/popular-dist";
+@import "layout/customers";
+@import "layout/experience";
 // @import "layout/popups";
 
 
 /* Components
    ========================================================================== */
-@import "components/logos";
 @import "components/buttons";
 @import "components/forms";
-@import "components/navigations";
-@import "components/links";
+@import "components/texts";
+@import "components/intersection";
+@import "components/images";
+@import "components/popup";
 
 /* Utilities
    ========================================================================== */
 @import "base/utilities";
-@import "base/text-styles";
 
 
 /* Vendor CSS

@@ -1,0 +1,21 @@
+.experience {
+    position: relative;
+}
+
+.experience-title {
+    padding-top: 192px;
+
+    font-family: $font_playfair;
+    font-size: 75px;
+    font-weight: normal;
+
+    color: $color_grey_title;
+    &:before {
+        position: absolute;
+        top: 85px;
+        left: 50%;
+
+        content: url(../img/3_mark.png);
+        transform: translate(-50%);
+    }
+}

@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+.cheapest-flights-images {
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 130px;
+
+    list-style: none;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cheapest-flights-image {
+    height: 100px;
+}
+
+.money-image {
+    height: 77px;
+}
+
+.popular-destinations-images {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.figure {
+    position: relative;
+
+    width: 288px;
+    height: 288px;
+}
+
+.image-background {
+    height: 100%;
+}
+
+.popular-destinations-image {
+    position: absolute;
+    top: 40px;
+    left: 39px;
+
+    display: block;
+
+    height: 208px;
+}
+
+.heart-image-figure {
+    position: relative;
+
+    margin-top: 43px;
+    &:before {
+        position: absolute;
+        top: 20px;
+        left: 0;
+
+        width: 346px;
+
+        content: '';
+
+        border-bottom: 4px solid $color_dark_purple;
+    }
+    &:after {
+        position: absolute;
+        top: 20px;
+        right: 0;
+
+        width: 346px;
+
+        content: '';
+
+        border-bottom: 4px solid $color_dark_purple;
+    }
+}
+
+.heart-image {
+    height: 42px;
+}
+
+.customers-thoughts-description {
+    margin-top: 54px;
+    padding-bottom: 86px;
+}
+
+.customers-thoughts-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.side-image {
+    display: block;
+
+    width: 487px;
+    height: 487px;
+}
+
+.center-image-figure {
+    width: 394px;
+    margin-top: -10px;
+}
+
+.center-image {
+    display: block;
+
+    height: 507px;
+
+    border: 8px solid $color_light_grey_border;
+}
+
+.customer-image-figure {
+    position: absolute;
+    z-index: 10;
+    top: 188px;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+
+.customer-image {
+    display: block;
+
+    height: 118px;
+
+    border-radius: 100%;
+}

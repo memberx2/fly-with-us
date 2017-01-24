@@ -2,16 +2,34 @@
    Buttons
    ========================================================================== */
 
-// .c-btn {
-//     cursor: pointer;
+.button {
+    display: block;
 
-//     border: none;
-//     .c-label {
-//         width: 100%;
+    width: 239px;
+    height: 64px;
+    padding-top: 17px;
 
-//         text-align: center;
-//     }
-// }
+    font-family: $font_default;
+    font-size: 18.75px;
+    font-weight: bold;
+
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color_dark_purple;
+    border: 2px solid $color_dark_purple;
+    background-color: transparent;
+    
+}
+
+.popular-destinations-button {
+	margin: 155px auto;
+}
+
+.experience-button {
+	margin: 109px auto 115px;
+}
 
 .form-button {
     position: absolute;
@@ -27,4 +45,15 @@
     background: url(../img/arrow.png) no-repeat 50% 50%;
     background-color: $color_dark_purple;
     box-shadow: -16px 0 20px #410b4c;
+}
+
+.popup-button {
+    position: absolute;
+    height: 63px;
+    width: 63px;
+    border-radius: 100%;
+    background-color: $color_purple_popup;
+    top: -41px;
+    right: -39px;
+    text-align: center;
 }
