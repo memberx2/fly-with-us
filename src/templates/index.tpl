@@ -35,13 +35,13 @@
                         <img class="people-image" src="./src/img/people_icon.png" alt=""/>
                         <ul class="counter">
                             <li class="counter-item">
-                                <img class="arrow" src="./src/img/up_arrow.png" alt=""/>
+                                <img class="arrow up-arrow" src="./src/img/up_arrow.png" alt=""/>
                             </li>
                             <li class="counter-item">
-                                <input class="number-input input" type="number" placeholder="2">
+                                <input class="number-input input" type="number" min="1"placeholder="1">
                             </li>
                             <li class="counter-item">
-                                <img class="arrow" src="./src/img/down_arrow.png" alt=""/>
+                                <img class="arrow down-arrow" src="./src/img/down_arrow.png" alt=""/>
                             </li>
                         </ul>
                         <button class="form-button"></button>
@@ -263,6 +263,8 @@
             </div>
         </section>
         {{ l_footer.render() }}
-        <script src="./static/js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="./static/js/jquery-ui.min.js"></script>
+        <script src="./static/js/app.js"></script>   
     </body>
 </html>

@@ -1,2 +1,5 @@
 import './modules/popup'
 import './modules/slider'
+import './modules/datepicker'
+import './modules/autocomplete'
+import './modules/counter'

@@ -61,6 +61,11 @@
     padding-left: 20px;
 }
 
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .arrow {
     margin-left: 20px;
 
