@@ -1,10 +1,15 @@
 const Datepicker = {
   	init: function () {
+  		var $dateInput = $( ".date-input" );
+
   		$('.date-image').on('click', function() {
-  			$(this).toggleClass('ui-datepicker-trigger');
+  			$(this).datepicker("show");
   		});
-  		$(".date-input").datepicker();
-  		$('.date-input-arrival').value = new Date();
+  		$dateInput.datepicker({ dateFormat: 'dd/mm/yy' });
+
+  		$dateInput.datepicker("setDate", new Date());
+  		$( ".date-input-departures" ).datepicker("setDate", "+1m");
+
 	}
 }
 

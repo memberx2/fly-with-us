@@ -19,44 +19,49 @@
     border-radius: 0 !important;
 }
 
-    .ui-widget-header .ui-icon-circle-triangle-w {
-        background-image: url(images/left_arrow_image.png) !important;
-        background-position: 0 0;
-    }
+.ui-widget-header .ui-icon-circle-triangle-w {
+    background-image: url(images/left_arrow_image.png) !important;
+    background-position: 0 0;
+}
 
-    .ui-widget-header .ui-icon-circle-triangle-e {
-        background-image: url(images/right_arrow_image.png) !important;
-        background-position: 0 0;
-    }
+.ui-widget-header .ui-icon-circle-triangle-e {
+    background-image: url(images/right_arrow_image.png) !important;
+    background-position: 0 0;
+}
 .ui-datepicker-next-hover {
-	background-color: $color_dark_purple !important;
-	height: 100% !important;
-	top: 0 !important;
-	border: 0 !important;
+    top: 0 !important;
+
+    height: 100% !important;
+
+    border: 0 !important;
+    background-color: $color_dark_purple !important;
 }
 
 .ui-datepicker-prev-hover {
-	background-color: $color_dark_purple !important;
-	height: 100% !important;
-	top: 0 !important;
-	border: 0 !important;
+    top: 0 !important;
+
+    height: 100% !important;
+
+    border: 0 !important;
+    background-color: $color_dark_purple !important;
 }
 
 .ui-state-default {
-	background-color: $color_dark_purple_date !important;
-	border: 0 !important;
-	color: $color_white !important;
-	text-align: center !important;
+    text-align: center !important;
+
+    color: $color_white !important;
+    border: 0 !important;
+    background-color: $color_dark_purple_date !important;
 }
 
 .ui-state-active {
-	background-color: $color_light_purple !important;
-	border: 0 !important;
+    border: 0 !important;
+    background-color: $color_light_purple !important;
 }
 
 .ui-autocomplete {
     color: $color_dark_purple_date !important;
-    background-color: $color_white !important;
-    border-radius: 0px;
     border: 1px solid $color_dark_purple_date !important;
+    border-radius: 0;
+    background-color: $color_white !important;
 }
