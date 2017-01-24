@@ -1,1 +1,2 @@
-import './modules/example'
+import './modules/popup'
+import './modules/slider'
