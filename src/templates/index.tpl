@@ -37,7 +37,7 @@
                         <input class="date-input-departures date-input input" type="text">
                     </div>
                 </div>
-                <div class="input-container number-container">
+                <div class="number-container">
                     <div class="counter-container">
                         <img class="people-image" src="./src/img/people_icon.png" alt=""/>
                         <ul class="counter">
@@ -51,9 +51,9 @@
                                 <img class="arrow down-arrow" src="./src/img/down_arrow.png" alt=""/>
                             </li>
                         </ul>
-                    </div>
-                    <button class="form-button"></button>
+                    </div>   
                 </div>
+                <button class="form-button"></button>
             </form>
         </div>
     </div>

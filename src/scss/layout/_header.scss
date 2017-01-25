@@ -81,6 +81,7 @@
         top: 220px;
         left: 50%;
 
+        width: 169px;
         margin: 0;
 
         transform: translate(-50%);
@@ -114,11 +115,13 @@
 
 .menu-trigger {
     display: none;
+
     @include media ('<tablet') {
-        display: block;
         position: absolute;
         top: 50%;
         right: 20px;
+
+        display: block;
 
         width: 50px;
         height: 6px;

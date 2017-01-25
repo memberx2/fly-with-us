@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: row;
 
-    width: 74%;
+    width: 100%;
     margin: 0 auto;
 
     transform: translateY(-50%);
@@ -34,6 +34,10 @@
     background-color: $color_white;
 
     justify-content: space-between;
+    @include media ("<=1366px") {
+        width: 74%;
+        height: 85%;
+    }
 }
 
 .popup-image-figure {
@@ -102,6 +106,9 @@
 
 .popup-text-container {
     flex-basis: 642px;
+    @include media ("<=1366px") {
+        padding-left: 20px;
+    }
 }
 
 .popup-title {
@@ -110,6 +117,10 @@
     font-family: $font_playfair;
     font-size: 66.67px;
     font-weight: normal;
+    @include media ("<=1366px") {
+        margin-top: 15px;
+        font-size: 56px;
+    }
 }
 
 .popup-description {
@@ -120,6 +131,10 @@
     font-weight: lighter;
 
     color: $color_light_grey_popup;
+    @include media ("<=1366px") {
+        margin-top: 15px;
+        font-size: 16px;
+    }
 }
 
 .icon-cancel {

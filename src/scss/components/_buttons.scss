@@ -38,7 +38,7 @@
 .form-button {
     position: absolute;
     top: -57px;
-    right: -110px;
+    right: 0;
 
     width: 98px;
     height: 178px;
@@ -53,7 +53,16 @@
     }
     @include media ('<=tablet') {
         position: absolute;
-        top: 103px;
+        top: 318px;
+
+        left: 0;
+        width: 100%;
+        height: 98px;
+    }
+    @include media ('<=phone') {
+        position: absolute;
+        top: 420px;
+
         left: 0;
         width: 100%;
         height: 98px;

@@ -1,5 +1,11 @@
 .customers-thoughts {
+    padding-bottom: 468px;
+
     text-align: center;
+
+    @include media ('<=phone') {
+        padding-bottom: 1442px;
+    }
 }
 
 .customers-thoughts-title {
@@ -49,19 +55,66 @@
     }
 }
 
-.active {
-    z-index: 40;
+.side-images-container {
+    position: relative;
+
+    display: block;
 }
 
-.last-active {
-    z-index: 30;
+.left-image-figure {
+    float: left;
+
+    @include media ('<tablet') {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.right-image-figure {
+    float: right;
+
+    @include media ('>=phone','<=tablet') {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    @include media ('<phone') {
+        top: 485px;
+    }
+}
+
+.slider-list {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+
+    overflow: hidden;
+
+    width: 394px;
+    height: 507px;
+
+    transform: translate(-50%);
+
+    @include media ('<=phone') {
+        top: 478px;
+        width: 100%;
+    }
+}
+
+.quotes-container {
+    position: relative;
 }
 
 .slider-item {
     position: absolute;
-    z-index: 20;
     top: 0;
-    left: 50%;
+    left: 0;
+}
 
-    transform: translate(-50%);
+.active {
+    z-index: 12;
+}
+
+.next-active {
+    z-index: 11;
 }

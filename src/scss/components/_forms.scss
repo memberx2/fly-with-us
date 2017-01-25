@@ -77,17 +77,25 @@
 
 .number-container {
     position: absolute;
+    top: -11px;
     right: 110px;
+
+    width: 117px;
 
     @include media ('<=tablet') {
         position: relative;
         left: 0;
 
-        width: 100%;
+        margin: 29px auto 0;
     }
 }
 
 .counter-container {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: flex-end;
     @include media ('<=tablet') {
         display: flex;
         flex-direction: row;
@@ -127,4 +135,22 @@
     margin-left: 20px;
 
     cursor: pointer;
+}
+
+.date-input-container {
+    display: flex;
+
+    border: 0;
+
+    @include media ('<=tablet') {
+        width: 356px;
+        margin: 10px auto 0;
+    }
+    @include media ('<=phone') {
+        display: flex;
+        flex-direction: column;
+
+        width: 253px;
+        margin: 10px auto 0;
+    }
 }
