@@ -1,14 +1,34 @@
 .inner {
     width: $size_inner;
     margin: 0 auto;
+
+    @include media ('<phone') {
+        width: 310px;
+    }
+    @include media ('<=tablet') {
+        width: 740px;
+    }
 }
 
 .inner-text {
     width: $size_inner-text;
     margin: 0 auto;
+
+    @include media ('<phone') {
+        width: 290px;
+    }
+    @include media ('<=tablet') {
+        width: 700px;
+    }
 }
 
 .inner-experience {
     width: $size_inner_heading;
     margin: 0 auto;
+    @include media ('<phone') {
+        width: 290px;
+    }
+    @include media ('<=tablet') {
+        width: 700px;
+    }
 }

@@ -10,6 +10,13 @@
     font-weight: normal;
 
     color: $color_grey_title;
+    @include media ('<phone') {
+        font-size: 36px;
+        text-align: center;
+    }
+    @include media ('<=tablet') {
+        text-align: center;
+    }
     &:before {
         position: absolute;
         top: 85px;

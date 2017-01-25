@@ -10,3 +10,9 @@
     margin-top: 54px;
     padding-bottom: 86px;
 }
+
+.cheapest-flights-item {
+	@include media ('<phone') {
+        margin-bottom: 50px;
+    }
+}

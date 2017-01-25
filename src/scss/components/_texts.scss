@@ -6,11 +6,19 @@
     text-align: center;
 
     color: $color_dark_grey;
+
+    @include media ('<phone') {
+        font-size: 36px;
+    }
 }
 
 .description {
-	font-family: $font_default;
+    font-family: $font_default;
     font-size: 20.83px;
     font-weight: lighter;
+
     color: $color_dark_grey;
+    @include media ('<phone') {
+        font-size: 17px;
+    }
 }

@@ -20,6 +20,11 @@
     color: $color_dark_purple;
     border: 2px solid $color_dark_purple;
     background-color: transparent;
+    &:hover {
+        color: $color_white;
+        border: 2px solid $color_white;
+        background-color: $color_dark_purple;
+    }
 }
 
 .popular-destinations-button {
@@ -33,7 +38,7 @@
 .form-button {
     position: absolute;
     top: -57px;
-    right: -141px;
+    right: -110px;
 
     width: 98px;
     height: 178px;
@@ -43,7 +48,16 @@
     border: 0;
     background: url(../img/arrow.png) no-repeat 50% 50%;
     background-color: $color_dark_purple;
-    box-shadow: -16px 0 20px #410b4c;
+    &:hover {
+        background-color: $color_dark_purple;
+    }
+    @include media ('<=tablet') {
+        position: absolute;
+        top: 103px;
+        left: 0;
+        width: 100%;
+        height: 98px;
+    }
 }
 
 .popup-button {

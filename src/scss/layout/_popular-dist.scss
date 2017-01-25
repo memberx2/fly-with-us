@@ -11,6 +11,9 @@
 
 .popular-destinations-item {
     margin-top: 164px;
+    @include media ('<phone') {
+        margin: 164px auto 0;
+    }
 }
 
 .popular-destinations-image-description {

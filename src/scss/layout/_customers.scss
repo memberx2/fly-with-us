@@ -48,3 +48,20 @@
         content: url(../img/2_mark.png);
     }
 }
+
+.active {
+    z-index: 40;
+}
+
+.last-active {
+    z-index: 30;
+}
+
+.slider-item {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%);
+}

@@ -10,6 +10,10 @@
     font-family: $font_default;
     font-size: 19.92px;
     font-weight: lighter;
+
+    @include media ('<=tablet') {
+        flex-direction: column;
+    }
 }
 
 .input {
@@ -26,6 +30,16 @@
     margin-left: 46px;
 
     border-bottom: 2px solid $color_light_purple;
+
+    @include media ('<=tablet') {
+        position: relative;
+        left: 50%;
+
+        width: 88%;
+        margin: 0;
+
+        transform: translate(-50%);
+    }
 }
 
 .input-container {
@@ -35,6 +49,13 @@
 
     justify-content: space-between;
     align-items: center;
+    @include media ('<=tablet') {
+        width: 70%;
+        margin: 0 auto;
+
+        justify-content: space-around;
+        flex-basis: 80px;
+    }
 }
 
 .date-input {
@@ -48,17 +69,53 @@
     margin-left: 60px;
 
     cursor: pointer;
+
+    @include media ('<=tablet') {
+        margin: 0;
+    }
 }
 
 .number-container {
     position: absolute;
     right: 110px;
+
+    @include media ('<=tablet') {
+        position: relative;
+        left: 0;
+
+        width: 100%;
+    }
+}
+
+.counter-container {
+    @include media ('<=tablet') {
+        display: flex;
+        flex-direction: row;
+
+        width: 130px;
+
+        justify-content: space-around;
+    }
 }
 
 .number-input {
     width: 55px;
     padding: 0;
     padding-left: 20px;
+
+    @include media ('<=tablet') {
+        width: 50%;
+        margin: 0 auto;
+
+        justify-content: space-around;
+        flex-basis: 80px;
+    }
+}
+
+.counter {
+    @include media ('<=tablet') {
+        width: 50%;
+    }
 }
 
 .number-input::-webkit-outer-spin-button,

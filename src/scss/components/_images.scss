@@ -12,6 +12,11 @@
 
     justify-content: space-between;
     align-items: center;
+    @include media ('<phone') {
+        flex-direction: column;
+
+        text-align: center;
+    }
 }
 
 .cheapest-flights-image {
@@ -44,7 +49,6 @@
 }
 
 .popular-destinations-image {
-	cursor: pointer;
     position: absolute;
     top: 40px;
     left: 39px;
@@ -52,38 +56,8 @@
     display: block;
 
     height: 208px;
-}
 
-.heart-image-figure {
-    position: relative;
-
-    margin-top: 43px;
-    &:before {
-        position: absolute;
-        top: 20px;
-        left: 0;
-
-        width: 346px;
-
-        content: '';
-
-        border-bottom: 4px solid $color_dark_purple;
-    }
-    &:after {
-        position: absolute;
-        top: 20px;
-        right: 0;
-
-        width: 346px;
-
-        content: '';
-
-        border-bottom: 4px solid $color_dark_purple;
-    }
-}
-
-.heart-image {
-    height: 42px;
+    cursor: pointer;
 }
 
 .customers-thoughts-description {
@@ -96,6 +70,9 @@
     flex-direction: row;
 
     justify-content: space-between;
+    @include media ('<phone') {
+        flex-direction: column;
+    }
 }
 
 .side-image {
@@ -108,6 +85,10 @@
 .center-image-figure {
     width: 394px;
     margin-top: -10px;
+
+    @include media ('<phone') {
+        width: 320px;
+    }
 }
 
 .center-image {
@@ -133,4 +114,19 @@
     height: 118px;
 
     border-radius: 100%;
+}
+
+.people-image {
+    @include media ('<=tablet') {
+        position: relative;
+        top: 33px;
+
+        height: 70%;
+    }
+}
+
+.right-image {
+    @include media ('<phone') {
+        margin-top: 488px;
+    }
 }
