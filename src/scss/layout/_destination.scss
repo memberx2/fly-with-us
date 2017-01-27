@@ -13,10 +13,3 @@
 	}
 }
 
-.date-input-container {
-	border: 0;
-	@include media ('<=tablet') {
-		width: 253px;
-		margin: 0 auto;
-	}
-}

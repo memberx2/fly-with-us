@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: row;
 
-    width: 100%;
+    width: 1393px;
     margin: 0 auto;
 
     transform: translateY(-50%);
@@ -34,9 +34,12 @@
     background-color: $color_white;
 
     justify-content: space-between;
-    @include media ("<=1366px") {
+    @include media ('<=1400px') {
         width: 74%;
         height: 85%;
+    }
+    @include media ('<=tablet') {
+        flex-direction: column;
     }
 }
 
@@ -49,6 +52,8 @@
 }
 
 .popup-image {
+    display: block;
+
     width: 100%;
 
     object-fit: fill;
@@ -68,6 +73,11 @@
 
     border-radius: 0 100px 100px 0;
     background-color: rgba(0, 0, 0, .7);
+
+    @include media ('<tablet') {
+        width: 60px;
+        height: 120px;
+    }
     &:after {
         position: absolute;
         top: 50%;
@@ -92,6 +102,11 @@
 
     border-radius: 100px 0 0 100px;
     background-color: rgba(0, 0, 0, .7);
+
+    @include media ('<tablet') {
+        width: 60px;
+        height: 120px;
+    }
     &:before {
         position: absolute;
         top: 50%;
@@ -102,12 +117,18 @@
     }
 }
 
-
-
 .popup-text-container {
     flex-basis: 642px;
-    @include media ("<=1366px") {
+    @include media ('<=1366px') {
         padding-left: 20px;
+    }
+    @include media ('<tablet') {
+        padding-bottom: 15px;
+
+    }
+    @include media ('<phone') {
+        overflow: scroll;
+
     }
 }
 
@@ -117,9 +138,15 @@
     font-family: $font_playfair;
     font-size: 66.67px;
     font-weight: normal;
-    @include media ("<=1366px") {
+
+    @include media ('<=1366px') {
         margin-top: 15px;
+
         font-size: 56px;
+    }
+    @include media ('<phone') {
+        font-size: 34px;
+
     }
 }
 
@@ -131,9 +158,15 @@
     font-weight: lighter;
 
     color: $color_light_grey_popup;
-    @include media ("<=1366px") {
+
+    @include media ('<=1366px') {
         margin-top: 15px;
+
         font-size: 16px;
+    }
+    @include media ('<phone') {
+        font-size: 12px;
+
     }
 }
 

@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
 .header {
     position: relative;
 
@@ -36,10 +40,6 @@
     }
 }
 
-.header-logo-figure {
-    margin: 0 20px;
-}
-
 .header-navigation-item {
     margin: 0 20px;
 
@@ -53,13 +53,6 @@
     }
 }
 
-.header-logo {
-    display: block;
-
-    width: 50px;
-    height: 50px;
-}
-
 .header-navigation-link {
     font-family: $font_default;
     font-size: 22.92px;
@@ -68,38 +61,6 @@
     &:hover {
         color: $color_purple;
     }
-}
-
-.header-search-form {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    margin: 8px 34px 0 0;
-
-    @include media ('<tablet') {
-        top: 220px;
-        left: 50%;
-
-        width: 169px;
-        margin: 0;
-
-        transform: translate(-50%);
-    }
-}
-
-.search-input {
-    width: 171px;
-    height: 33px;
-    padding-left: 42px;
-
-    font-family: $font_roboto;
-    font-size: 12.5px;
-    font-weight: bold;
-
-    text-transform: uppercase;
-
-    border: 2px solid $color_light_grey;
 }
 
 .icon-search-1 {

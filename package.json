@@ -62,7 +62,9 @@
     "webpack": "1.12.14",
     "webpack-dev-middleware": "1.5.1",
     "webpack-hot-middleware": "2.10.0",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "bxslider": "^4.2.6",
+    "swiper": "3.4.1"
   },
   "pre-commit": [
     "lint",

@@ -45,7 +45,7 @@
                                 <img class="arrow up-arrow" src="./src/img/up_arrow.png" alt=""/>
                             </li>
                             <li class="counter-item">
-                                <input class="number-input input" type="number" min="1"placeholder="1">
+                                <input class="number-input input" type="number" min="1" placeholder="1">
                             </li>
                             <li class="counter-item">
                                 <img class="arrow down-arrow" src="./src/img/down_arrow.png" alt=""/>
@@ -84,6 +84,7 @@
     {{ l_footer.render() }}
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="./static/js/jquery-ui.min.js"></script>
+    <script src="./static/js/swiper.jquery.min.js"></script>
     <script src="./static/js/app.js"></script>   
 </body>
 </html>

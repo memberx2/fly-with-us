@@ -1,11 +1,5 @@
 .customers-thoughts {
-    padding-bottom: 468px;
-
     text-align: center;
-
-    @include media ('<=phone') {
-        padding-bottom: 1442px;
-    }
 }
 
 .customers-thoughts-title {
@@ -29,6 +23,12 @@
 
     background-color: $color_white;
 }
+
+.customers-thoughts-description {
+    margin-top: 54px;
+    padding-bottom: 86px;
+}
+
 
 .customer-quote {
     position: relative;
@@ -55,66 +55,34 @@
     }
 }
 
-.side-images-container {
-    position: relative;
+.swiper-container {
+    display: flex;
+    flex-direction: row;
 
-    display: block;
+    width: calc(100vw - 17px);
+    height: 507px;
+
+    justify-content: space-between;
 }
 
-.left-image-figure {
-    float: left;
-
-    @include media ('<tablet') {
-        position: absolute;
-        left: 0;
-    }
-}
-
-.right-image-figure {
-    float: right;
-
-    @include media ('>=phone','<=tablet') {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    @include media ('<phone') {
-        top: 485px;
-    }
-}
-
-.slider-list {
-    position: absolute;
-    top: -10px;
+.swiper-slide {
     left: 50%;
 
-    overflow: hidden;
-
-    width: 394px;
-    height: 507px;
+    width: 30.3%;
+    height: 100%;
 
     transform: translate(-50%);
 
-    @include media ('<=phone') {
-        top: 478px;
-        width: 100%;
-    }
+        @include media ('<=460px') {
+            width: 100%;
+            left: 0;
+            transform: translate(-50%);
+
+        }
 }
 
-.quotes-container {
-    position: relative;
-}
+.slider-item-center {
+    left: 50%;
 
-.slider-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.active {
-    z-index: 12;
-}
-
-.next-active {
-    z-index: 11;
+    transform: translate(-50%);
 }

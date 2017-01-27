@@ -1,5 +1,6 @@
 import $ from 'jquery'
 import '../../../node_modules/slick-carousel/slick/slick'
+import 'swiper'
 
 const Slider = {
 	init: function () {
@@ -25,48 +26,29 @@ const Slider = {
 			}
 		});
 
-		/*function slider() {
-			$('.slider').each(function(){
-				var $active = $(this).find('.slider-item.active');
-
-				if ( $active.length == 0 ) {
-					$active = $(this).find('.slider-item').last();
-				}
-
-				var $next =  $(this).find($active).next().length > 0 ? $(this).find($active).next() : $('.slider').children().first();
-				console.log('nextlength:', $(this).find($active).next().index());
-				console.log('active:' ,$active);
-				console.log('next:', $next);
-				$active.addClass('last-active');
-				$next.css({opacity: 0.0}).addClass('active').animate({
-					opacity: 1.0
-				}, 1000, function() {
-					$active.removeClass('active last-active');
-
-				});
-
-			});
-		}*/
-
 		this.rotate();
 	},
 	rotate: function() {
-		var slidesList = $(".slider-list");
+ 
+    	var mySwiper = new Swiper ('.swiper-container', {
+      	
+      	slidesPerView: 3,
+      	centeredSlides: true,
+      	loop: true,
+      	autoplay: 3000,
+      	paginationClickable: true,
+      	breakpoints: {
+      		1024: {
+      			slidesPerView: 2,
+      		},
+      		460: {
+      			slidesPerView: 1,
+      			direction: 'vertical'
+      		}
+      	}
+      });        
 
-		var currentSlide = slidesList.find(".active");
-		var nextSlide = currentSlide.next().length ? currentSlide.next() : slidesList.children().first();
-
-		nextSlide.addClass("next-active");
-
-		currentSlide.animate({
-			left: "-" + currentSlide.width() + "px"
-		}, 500, "swing", function(){
-			currentSlide.removeClass("active");
-			nextSlide.removeClass("next-active").addClass("active");
-			setTimeout(Slider.rotate, 1500);
-			currentSlide.css({left: 0});
-		});
-	}
+    }
 }
 
 $(document).ready(function () {
