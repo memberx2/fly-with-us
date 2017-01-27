@@ -32,14 +32,17 @@ const Slider = {
  
     	var mySwiper = new Swiper ('.swiper-container', {
       	
+      	direction: 'horizontal',
       	slidesPerView: 3,
       	centeredSlides: true,
       	loop: true,
       	autoplay: 3000,
+      	autoplayDisableOnInteraction: false,
       	paginationClickable: true,
       	breakpoints: {
       		1024: {
       			slidesPerView: 2,
+      			direction: 'horizontal'
       		},
       		460: {
       			slidesPerView: 1,
