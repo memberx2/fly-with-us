@@ -51,7 +51,7 @@
     &:hover {
         background-color: $color_dark_purple;
     }
-    @include media ('<=tablet') {
+    @include media ('<=1170px') {
         position: absolute;
         top: 318px;
 
